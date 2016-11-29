@@ -1,0 +1,24 @@
+- name: Livingroom normal
+  entities:
+    light.lights_level_4_0:
+      state: on
+      transition: 2
+      brightness: 200
+      xy_color: [ 0.4448, 0.4066 ]
+    #light.light2:
+    #    state: on
+    #    transition: 2
+    #    brightness: 215
+    #    xy_color: [ 0.4448, 0.4066 ]
+- name: Livingroom dim
+  entities:
+    light.lights_level_4_0:
+      state: on
+      transition: 2
+      brightness: 40
+      xy_color: [ 0.5926, 0.3814 ]
+    #light.light2:
+    #    state: on
+    #    transition: 2
+    #    brightness: 145
+    #    xy_color: [ 0.5529, 0.4107 ]

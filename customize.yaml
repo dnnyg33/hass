@@ -1,0 +1,24 @@
+switch.vision_zl7432_inwall_switch_dual_relay_switch_3_0_2:
+  friendly_name: 'Outdoor Garage Lights'
+  icon: mdi:lightbulb
+switch.vision_zl7432_inwall_switch_dual_relay_switch_3_0_3:
+  friendly_name: 'Porch Lights'
+  icon: mdi:lightbulb
+switch.vision_zl7432_inwall_switch_dual_relay_switch_3_0:
+  hidden: true
+switch.wemo_switch:
+  friendly_name: 'Wemo Switch'
+light.lights_level_4_0:
+  friendly_name: 'Living Room Lights'
+light.lights_level_5_0:
+  friendly_name: 'Master Lights'
+  icon: mdi:lightbulb
+light.ge_unknown_type4944_id3034_level_6_0:
+  friendly_name: 'Master Fan'
+  icon: mdi:fan
+light.lights_level_7_0:
+  friendly_name: 'Dining Lights'
+  icon: mdi:lightbulb
+light.lights_level_8_0:
+  friendly_name: 'Kitchen Lights'
+  icon: mdi:lightbulb

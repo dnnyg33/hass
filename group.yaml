@@ -1,0 +1,8 @@
+main:
+  name: Main Lights
+  icon: mdi:account-multiple
+  view: yes
+  entities:
+    - light.lights_level_4_0
+    - light.lights_level_7_0
+    - light.lights_level_8_0
