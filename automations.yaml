@@ -1,4 +1,4 @@
-id: "id_1"
+id: "usEdSTer"
 alias: "Media player paused/stopped"
 trigger: 
   platform: state
@@ -12,7 +12,7 @@ action:
   service: scene.turn_on
   entity_id: scene.livingroom_normal
 
-id: "id_2"
+id: "CoARdiSp"
 alias: "Front Lights on at Sunset"
 trigger:
   plaform: sun
@@ -21,7 +21,7 @@ action:
   service: light.turn_on
   entity_id: group.all_switches
 
-id: "id_3"
+id: "PhTFrAPe"
 alias: "Front lights off at midnight"
 trigger:
   platform: time
