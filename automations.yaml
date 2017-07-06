@@ -11,3 +11,21 @@ condition:
 action:
   service: scene.turn_on
   entity_id: scene.livingroom_normal
+
+id: "id_2"
+alias: "Front Lights on at Sunset"
+trigger:
+  plaform: sun
+  event: sunset
+action:
+  service: light.turn_on
+  entity_id: group.all_switches
+
+id: "id_3"
+alias: "Front lights off at midnight"
+trigger:
+  platform: time
+  at: '23:59:59'
+action:
+  service: light.turn_off
+  entity_id: group.all_switches
