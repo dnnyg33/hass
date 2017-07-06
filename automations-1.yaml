@@ -1,0 +1,44 @@
+- id: "Automation 1"
+  alias: "Media player paused/stopped"
+  trigger:
+  - platform: state
+    entity_id: media_player.living_room
+    from: 'playing'
+  condition:
+  - condition: state
+    entity_id: sun.sun
+    state: 'below_horizon'
+  action:
+  - service: scene.turn_on
+    entity_id: scene.livingroom_normal
+
+- id: "2"
+  alias: "Front Lights on at Sunset"
+  trigger:
+  - plaform: sun
+    event: sunset
+  action:
+  - service: light.turn_on
+    entity_id: group.all_switches
+
+- id: "3"
+  alias: "Front lights off at midnight"
+  trigger:
+  - platform: time
+    at: '23:59:59'
+  action:
+  - service: light.turn_off
+    entity_id: group.all_switches
+
+#- alias: "Media player playing"
+#  trigger:
+#    - platform: state
+#      entity_id: media_player.living_room
+#      to: 'playing'
+#  condition:
+#    - condition: state
+#      entity_id: sun.sun
+#      state: 'below_horizon'
+#  action:
+#      service: scene.turn_on
+#      entity_id: scene.livingroom_dim

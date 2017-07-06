@@ -23,19 +23,20 @@ ifttt:
 
 http:
   api_password: !secret http_password
+  server_port: 8123
 
 nest:
-  username: danielsgeorge@gmail.com
-  password: !secret nest_password
+  client_id: 99054e68-7dd0-4306-8221-c52ce68a685a
+  client_secret: 2GgTEqc4AvbNtrtV9UBanHgHt
 
 climate:
   platform: nest
 
-camera:
-  platform: foscam
-  ip: 192.168.1.6
-  username: admin
-  password: !secret foscam_password
+#camera:
+#  platform: foscam
+#  ip: 192.168.1.6
+#  username: admin
+#  password: !secret foscam_password
 
 # Checks for available updates
 updater:
@@ -69,10 +70,15 @@ mqtt:
   username: pi
   password: raspberry
 
+emulated_hue:
+  type: google_home
+  listen_port: 80
+
 zwave:
   usb_path: /dev/serial/by-id/usb-0658_0200-if00
 
-automation: !include automation.yaml
+
+automation: !include automations.yaml
 scene: !include scene.yaml
 group: !include group.yaml
 
