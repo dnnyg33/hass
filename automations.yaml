@@ -1,7 +1,7 @@
 alias: "Media player paused/stopped"
 trigger: 
   platform: state
-  entity_id: media_player:living_room
+  entity_id: media_player.living_room
   from: 'playing'
 condition: 
   condition: state
