@@ -88,6 +88,11 @@ rest_command:
     method: post
     username: webiopi
     password: m0Uk4udVG41zP   
+  close_garage_request:
+    url: 'http://192.168.1.3:8000/macros/closeDoor'
+    method: post
+    username: webiopi
+    password: m0Uk4udVG41zP  
 
 automation: !include automations.yaml
 scene: !include scene.yaml
